@@ -8,9 +8,9 @@ public class Family implements Names{
     private final ArrayList<Human> children = new ArrayList<>();
     private final ArrayList<Human> grannies = new ArrayList<>();
 
-    public Family(Human mother, Human father) {
-        this.woman = mother;
-        this.man = father;
+    public Family(Human woman, Human man) {
+        this.woman = woman;
+        this.man = man;
     }
 
     public Family() {
@@ -42,7 +42,7 @@ public class Family implements Names{
             }
         }
         woman.setChildren(children);
-        woman.setChildren(children);
+        man.setChildren(children);
     }
 
     @Override
